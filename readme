@@ -1,0 +1,33 @@
+// install----->>>>
+
+//npm i react-icons
+
+// npx creacte-react-app
+
+// ------>>>>
+
+// npm up start -- start project
+// npm i react-icons -- icon
+
+//rcf ------>>>>
+// import React from 'react'
+
+// export default function items() {
+// return (
+// <div>items</div>
+// )
+// }
+
+//rce ------->>>>
+
+// import React, { Component } from 'react'
+
+// export class index extends Component {
+// render() {
+// return (
+// <div>index</div>
+// )
+// }
+// }
+
+// export default index
