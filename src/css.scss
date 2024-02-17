@@ -22,13 +22,44 @@ body {
           position: absolute;
           top: 30px;
           right: 0;
+          display: flex;
+          flex-direction: column;
+          padding: 20px;
+
           width: 450px;
-          min-height: 100px;
           background: #fafafa;
           -webkit-box-shadow: 15px 13px 5px -11px rgba(0, 0, 0, 0.34);
           -moz-box-shadow: 15px 13px 5px -11px rgba(0, 0, 0, 0.34);
           box-shadow: 15px 13px 5px -11px rgba(0, 0, 0, 0.34);
           z-index: 1000;
+
+          .item {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            opacity: 0.9;
+            padding: 2px;
+            h2,
+            b {
+              font-size: 16px;
+              font-weight: 600;
+              color: #333;
+              margin: 3px;
+            }
+            img {
+              max-width: 15%;
+            }
+            b {
+              color: rgb(159, 162, 159);
+            }
+          }
+          .empty {
+            text-align: center;
+            h2 {
+              font-size: 20px;
+              margin-bottom: 20px;
+            }
+          }
         }
         .shop-cart-button {
           float: right;
