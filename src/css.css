@@ -32,15 +32,23 @@ body #root .wrapper header .shop-cart {
   box-shadow: 15px 13px 5px -11px rgba(0, 0, 0, 0.34);
   z-index: 1000;
 }
+body #root .wrapper header .shop-cart .sum {
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 65%;
+}
 body #root .wrapper header .shop-cart .item {
   display: flex;
   width: 100%;
-  flex-direction: column;
+  flex-direction: row;
   opacity: 0.9;
   padding: 2px;
+  justify-content: space-between;
+  align-items: center;
 }
 body #root .wrapper header .shop-cart .item h2,
 body #root .wrapper header .shop-cart .item b {
+  max-width: 20%;
   font-size: 16px;
   font-weight: 600;
   color: #333;
@@ -51,6 +59,15 @@ body #root .wrapper header .shop-cart .item img {
 }
 body #root .wrapper header .shop-cart .item b {
   color: rgb(159, 162, 159);
+}
+body #root .wrapper header .shop-cart .item .delete-icon {
+  color: #e98e8e;
+  cursor: pointer;
+  transition: color, transform 0.5s ease;
+}
+body #root .wrapper header .shop-cart .item .delete-icon:hover {
+  transform: scale(1.5);
+  color: #da5656;
 }
 body #root .wrapper header .shop-cart .empty {
   text-align: center;
