@@ -16,6 +16,79 @@ body {
     .wrapper {
       width: 1280px;
       margin: 50px auto;
+      .full-item {
+        position: fixed;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        background-color: rgba(200, 196, 196, 0.701);
+        z-index: 9999;
+        overflow: auto;
+        div {
+          width: 600px;
+          position: relative;
+          margin: 10% auto;
+          padding: 40px 30px;
+          background-color: #f0f0f0;
+          border-radius: 9px;
+        }
+        .add-to-card {
+          position: absolute;
+          right: 20px;
+          bottom: 20px;
+          background: #e26f6f;
+          width: 35px;
+          height: 35px;
+          text-align: center;
+          line-height: 35px;
+          color: #fff;
+          border-radius: 50%;
+          cursor: pointer;
+          transition: transform 0.5s ease;
+        }
+        .add-to-card:hover {
+          transform: scale(1.5) translateY(-5px);
+        }
+        h2,
+        p,
+        b {
+          margin: 10px 20px;
+          color: #333;
+        }
+        b {
+          color: green;
+        }
+        .show-img {
+          width: 100%;
+          border-radius: 10px 10px 0 0;
+          transition: transform 0.5s ease;
+          cursor: pointer;
+        }
+        .show-img:hover {
+          transform: scale(1.05);
+        }
+        .full-item:hover {
+          transform: scale(1.5) translateY(-5px);
+        }
+      }
+      .category div {
+        display: inline-block;
+        background-color: #d2e0df;
+        border-radius: 50px;
+        padding: 10px 20px;
+        margin-bottom: 25px;
+        margin-right: 15px;
+        font-size: 16px;
+        font-weight: 400;
+        border: 1px solid transparent;
+      }
+      .category div:hover {
+        cursor: pointer;
+        border-color: #b5b1b1;
+        transform: scale(1.2);
+        transition: transform 0.5s ease;
+      }
       header {
         position: relative;
         .shop-cart {
@@ -173,6 +246,7 @@ body {
             width: 100%;
             border-radius: 10px 10px 0 0;
             transition: transform 0.5s ease;
+            cursor: pointer;
           }
           img:hover {
             transform: scale(1.05);
